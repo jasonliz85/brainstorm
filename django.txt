@@ -1,0 +1,17 @@
+Useful Django commands
+# starting a new porject
+django-admin.py startproject mysite
+# start the server
+python manage.py runserver
+# looks at installed apps and creates relevant tables
+python manage.py syncdb
+# shows the associated sql statements before committing
+python manage.py sql polls
+# checks the models for any errors
+python manage.py validate
+# outputs the drop table for this app
+python manage.py sqlclear polls 
+# A combination of all the SQL from the sql, sqlcustom, and sqlindexes commands
+python manage.py sqlall polls
+# runs the python interactive shell with django context
+python manage.py shell
